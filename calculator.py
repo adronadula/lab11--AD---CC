@@ -20,9 +20,6 @@ def div(a, b):
         raise ZeroDivisionError("a cannot be 0")
     return a / b
 
-def square(a):
-    return a ** 2
-
 def log(a, b):
     if a <= 0 or a == 1:
         raise ValueError("Base must be positive and not equal to 1")

@@ -15,8 +15,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.add(-2, -3), -5)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(calculator.sub(13, 3), 10)
-        self.assertEqual(calculator.sub(16, 3), 3)
+        self.assertEqual(calculator.subtract(13, 3), 10)
+        self.assertEqual(calculator.subtract(16, 3), 13)
 
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):

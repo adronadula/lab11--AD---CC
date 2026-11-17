@@ -1,5 +1,5 @@
 # https://github.com/adronadula/lab11--AD---CC
-# Partner 1: <your name>
+# Partner 1: Aditya Dronaula
 # Partner 2: Canran Cui
 
 import unittest

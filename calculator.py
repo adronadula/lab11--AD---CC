@@ -1,15 +1,13 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/adronadula/lab11--AD---CC
+# Partner 1: Aditya Dronadula
+# Partner 2: Canran Cui
 
-One function per operation, in order.
-"""
 import math
 
 def add(a, b):
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -18,9 +16,9 @@ def mul(a, b):
 def div(a, b):
     if a == 0:
         raise ZeroDivisionError("a cannot be 0")
-    return a / b
+    return b / a
 
-def log(a, b):
+def logarithm(a, b):
     if a <= 0 or a == 1:
         raise ValueError("Base must be positive and not equal to 1")
     if b <= 0:
@@ -29,3 +27,15 @@ def log(a, b):
 
 def exp(a, b):
     return a ** b
+
+def square_root(a):
+    try:
+        if a < 0:
+            raise ValueError("Cannot take the square root of a negative number")
+        return math.sqrt(a)
+    except TypeError:
+        raise ValueError("Input must be a number")
+
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
